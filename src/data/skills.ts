@@ -12,50 +12,100 @@ export type SkillItem = {
 
 export const skillCategories: SkillCategory[] = [
   {
-    category: "Languages",
-    items: [
-      { name: "Python", shortLabel: "Py", category: "Languages" },
-      { name: "JavaScript", shortLabel: "JS", category: "Languages" },
-      { name: "TypeScript", shortLabel: "TS", category: "Languages" },
-      { name: "C++", shortLabel: "C++", category: "Languages" },
-      { name: "C#", shortLabel: "C#", category: "Languages" },
-    ],
-  },
-  {
-    category: "Frontend",
-    items: [
-      { name: "React", shortLabel: "React", category: "Frontend" },
-      { name: "HTML/CSS", shortLabel: "</>", category: "Frontend" },
-    ],
-  },
-  {
-    category: "Tools and Frameworks",
-    items: [
-      { name: "Flask", shortLabel: "Fl", category: "Tools and Frameworks" },
-      { name: "Git", shortLabel: "Git", category: "Tools and Frameworks" },
+    "category": "Languages",
+    "items": [
       {
-        name: "GitHub Actions",
-        shortLabel: "GA",
-        category: "Tools and Frameworks",
+        "name": "TypeScript",
+        "shortLabel": "TS",
+        "category": "Languages"
       },
-      { name: "Unity", shortLabel: "U", category: "Tools and Frameworks" },
-    ],
+      {
+        "name": "JavaScript",
+        "shortLabel": "JS",
+        "category": "Languages"
+      },
+      {
+        "name": "Python",
+        "shortLabel": "P",
+        "category": "Languages"
+      },
+      {
+        "name": "SQL",
+        "shortLabel": "SQL",
+        "category": "Languages"
+      }
+    ]
   },
   {
-    category: "Data and Analysis",
-    items: [
+    "category": "Web",
+    "items": [
       {
-        name: "Data Visualization",
-        shortLabel: "Viz",
-        category: "Data and Analysis",
+        "name": "React",
+        "shortLabel": "R",
+        "category": "Web"
       },
-      { name: "Pandas", shortLabel: "Pd", category: "Data and Analysis" },
-      { name: "Matplotlib", shortLabel: "Mpl", category: "Data and Analysis" },
-      { name: "Debugging", shortLabel: "Debug", category: "Data and Analysis" },
-    ],
+      {
+        "name": "HTML",
+        "shortLabel": "HTML",
+        "category": "Web"
+      },
+      {
+        "name": "CSS",
+        "shortLabel": "CSS",
+        "category": "Web"
+      },
+      {
+        "name": "Node.js",
+        "shortLabel": "N",
+        "category": "Web"
+      }
+    ]
   },
+  {
+    "category": "Tools",
+    "items": [
+      {
+        "name": "Git",
+        "shortLabel": "G",
+        "category": "Tools"
+      },
+      {
+        "name": "GitHub",
+        "shortLabel": "GH",
+        "category": "Tools"
+      },
+      {
+        "name": "VS Code",
+        "shortLabel": "VSC",
+        "category": "Tools"
+      },
+      {
+        "name": "Figma",
+        "shortLabel": "F",
+        "category": "Tools"
+      }
+    ]
+  },
+  {
+    "category": "Data",
+    "items": [
+      {
+        "name": "Pandas",
+        "shortLabel": "P",
+        "category": "Data"
+      },
+      {
+        "name": "CSV analysis",
+        "shortLabel": "CSV",
+        "category": "Data"
+      },
+      {
+        "name": "dashboards",
+        "shortLabel": "D",
+        "category": "Data"
+      }
+    ]
+  }
 ];
 
-export const skillItems: SkillItem[] = skillCategories.flatMap(
-  (category) => category.items,
-);
+export const skillItems: SkillItem[] = skillCategories.flatMap((category) => category.items);
