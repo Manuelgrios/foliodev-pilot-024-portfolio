@@ -1,5 +1,3 @@
-import { profile } from "./profile";
-
 export type SocialLink = {
   key: "email" | "linkedin" | "github" | "leetcode" | "portfolio";
   label: string;
@@ -11,26 +9,26 @@ export type SocialLink = {
 
 export const socialLinks: SocialLink[] = [
   {
-    key: "email",
-    label: "Email",
-    value: profile.email,
-    href: `mailto:${profile.email}`,
-    iconKey: "mail",
+    "key": "email",
+    "label": "Email",
+    "value": "demo.student@example.com",
+    "href": "mailto:demo.student@example.com",
+    "iconKey": "mail"
   },
   {
-    key: "linkedin",
-    label: "LinkedIn",
-    value: "linkedin.com/in/manuel-garnica-122233252",
-    href: "https://www.linkedin.com/in/manuel-garnica-122233252/",
-    iconKey: "linkedin",
-    external: true,
+    "key": "linkedin",
+    "label": "LinkedIn",
+    "value": "www.linkedin.com/in/demo-student-portfolio",
+    "href": "https://www.linkedin.com/in/demo-student-portfolio",
+    "iconKey": "linkedin",
+    "external": true
   },
   {
-    key: "github",
-    label: "GitHub",
-    value: "github.com/Manuelgrios",
-    href: "https://github.com/Manuelgrios",
-    iconKey: "github",
-    external: true,
-  },
+    "key": "github",
+    "label": "GitHub",
+    "value": "github.com/demo-student-portfolio",
+    "href": "https://github.com/demo-student-portfolio",
+    "iconKey": "github",
+    "external": true
+  }
 ];
